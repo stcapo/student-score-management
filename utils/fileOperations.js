@@ -3,7 +3,7 @@ import path from 'path';
 
 // 读取JSON文件
 export const readJSONFile = (filePath) => {
-  const absolutePath = path.resolve('D:\\AA\\student-grade-system', filePath);
+  const absolutePath = path.resolve('/Users/apple/project/student/student-score-management', filePath);
   try {
     const jsonData = fs.readFileSync(absolutePath, 'utf8');
     return JSON.parse(jsonData);
@@ -15,7 +15,7 @@ export const readJSONFile = (filePath) => {
 
 // 写入JSON文件
 export const writeJSONFile = (filePath, data) => {
-  const absolutePath = path.resolve('D:\\AA\\student-grade-system', filePath);
+  const absolutePath = path.resolve('/Users/apple/project/student/student-score-management', filePath);
   try {
     const jsonString = JSON.stringify(data, null, 2);
     fs.writeFileSync(absolutePath, jsonString);

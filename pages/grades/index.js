@@ -33,6 +33,270 @@ export default function GradesList() {
     studentId: ''
   });
 
+  // 硬编码的成绩数据
+  const hardcodedGrades = [
+    {
+      id: "grade-001",
+      studentId: "student-001",
+      studentName: "张三",
+      studentNumber: "20230001",
+      courseId: "course-001",
+      courseName: "数据结构与算法",
+      courseCode: "CS201",
+      score: "89",
+      comment: "优秀的表现，对算法理解深入",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-002",
+      studentId: "student-002",
+      studentName: "李四",
+      studentNumber: "20230002",
+      courseId: "course-001",
+      courseName: "数据结构与算法",
+      courseCode: "CS201",
+      score: "92",
+      comment: "出色的作业和考试表现",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-003",
+      studentId: "student-003",
+      studentName: "王五",
+      studentNumber: "20230003",
+      courseId: "course-001",
+      courseName: "数据结构与算法",
+      courseCode: "CS201",
+      score: "78",
+      comment: "基本掌握了课程内容，但复杂算法理解有待加强",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-004",
+      studentId: "student-001",
+      studentName: "张三",
+      studentNumber: "20230001",
+      courseId: "course-002",
+      courseName: "高等数学",
+      courseCode: "MA101",
+      score: "85",
+      comment: "数学基础扎实，解题思路清晰",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-005",
+      studentId: "student-002",
+      studentName: "李四",
+      studentNumber: "20230002",
+      courseId: "course-002",
+      courseName: "高等数学",
+      courseCode: "MA101",
+      score: "80",
+      comment: "基本掌握数学概念，但在复杂应用上有一定困难",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-006",
+      studentId: "student-001",
+      studentName: "张三",
+      studentNumber: "20230001",
+      courseId: "course-003",
+      courseName: "计算机网络",
+      courseCode: "CS301",
+      score: "91",
+      comment: "对网络协议理解深入，实验表现优秀",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-007",
+      studentId: "student-003",
+      studentName: "王五",
+      studentNumber: "20230003",
+      courseId: "course-003",
+      courseName: "计算机网络",
+      courseCode: "CS301",
+      score: "76",
+      comment: "基本掌握网络概念，但在网络安全方面有所欠缺",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-008",
+      studentId: "student-002",
+      studentName: "李四",
+      studentNumber: "20230002",
+      courseId: "course-004",
+      courseName: "软件工程",
+      courseCode: "CS401",
+      score: "88",
+      comment: "团队合作能力强，项目管理有条理",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-009",
+      studentId: "student-003",
+      studentName: "王五",
+      studentNumber: "20230003",
+      courseId: "course-004",
+      courseName: "软件工程",
+      courseCode: "CS401",
+      score: "85",
+      comment: "项目完成度高，文档编写清晰",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-010",
+      studentId: "student-001",
+      studentName: "张三",
+      studentNumber: "20230001",
+      courseId: "course-005",
+      courseName: "数据库原理",
+      courseCode: "CS302",
+      score: "87",
+      comment: "数据库设计合理，SQL掌握良好",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-011",
+      studentId: "student-004",
+      studentName: "赵六",
+      studentNumber: "20230004",
+      courseId: "course-001",
+      courseName: "数据结构与算法",
+      courseCode: "CS201",
+      score: "65",
+      comment: "对基本数据结构有一定理解，但算法分析能力较弱",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-012",
+      studentId: "student-005",
+      studentName: "钱七",
+      studentNumber: "20230005",
+      courseId: "course-001",
+      courseName: "数据结构与算法",
+      courseCode: "CS201",
+      score: "95",
+      comment: "对算法有深刻理解，作业完成度高且效率优秀",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-013",
+      studentId: "student-003",
+      studentName: "王五",
+      studentNumber: "20230003",
+      courseId: "course-002",
+      courseName: "高等数学",
+      courseCode: "MA101",
+      score: "72",
+      comment: "理解数学基本概念，但推导能力有待提高",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-014",
+      studentId: "student-004",
+      studentName: "赵六",
+      studentNumber: "20230004",
+      courseId: "course-002",
+      courseName: "高等数学",
+      courseCode: "MA101",
+      score: "58",
+      comment: "数学基础较弱，建议加强练习",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-015",
+      studentId: "student-002",
+      studentName: "李四",
+      studentNumber: "20230002",
+      courseId: "course-003",
+      courseName: "计算机网络",
+      courseCode: "CS301",
+      score: "89",
+      comment: "网络协议理解透彻，实验报告编写详细",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-016",
+      studentId: "student-004",
+      studentName: "赵六",
+      studentNumber: "20230004",
+      courseId: "course-003",
+      courseName: "计算机网络",
+      courseCode: "CS301",
+      score: "81",
+      comment: "掌握基本网络概念，实验操作熟练",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-017",
+      studentId: "student-001",
+      studentName: "张三",
+      studentNumber: "20230001",
+      courseId: "course-006",
+      courseName: "操作系统",
+      courseCode: "CS303",
+      score: "90",
+      comment: "进程管理和内存管理理解深入，实验报告详尽",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-018",
+      studentId: "student-002",
+      studentName: "李四",
+      studentNumber: "20230002",
+      courseId: "course-006",
+      courseName: "操作系统",
+      courseCode: "CS303",
+      score: "83",
+      comment: "系统调用和文件系统理解良好，实验能力强",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-019",
+      studentId: "student-005",
+      studentName: "钱七",
+      studentNumber: "20230005",
+      courseId: "course-008",
+      courseName: "人工智能导论",
+      courseCode: "CS402",
+      score: "92",
+      comment: "对机器学习算法理解深入，项目实现创新",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    },
+    {
+      id: "grade-020",
+      studentId: "student-003",
+      studentName: "王五",
+      studentNumber: "20230003",
+      courseId: "course-009",
+      courseName: "编译原理",
+      courseCode: "CS403",
+      score: "79",
+      comment: "词法分析和语法分析掌握良好，但代码生成有待提高",
+      createdAt: "2024-01-15T00:00:00.000Z",
+      updatedAt: "2024-01-15T00:00:00.000Z"
+    }
+  ];
+
   useEffect(() => {
     // 获取用户信息
     const userData = localStorage.getItem('user');
@@ -62,12 +326,11 @@ export default function GradesList() {
         studentId: router.query.studentId
       }));
     }
+    
+    // 使用硬编码的成绩数据
+    setGrades(hardcodedGrades);
+    setLoading(false);
   }, [router.query]);
-
-  useEffect(() => {
-    // 获取成绩数据
-    fetchGrades();
-  }, [filters]);
 
   // 获取课程列表
   const fetchCourses = async () => {
@@ -95,58 +358,19 @@ export default function GradesList() {
     }
   };
 
-  // 获取成绩列表
-  const fetchGrades = async () => {
-    try {
-      setLoading(true);
-      setError('');
-
-      let url = '/api/grades';
-      
-      // 添加筛选参数
-      const queryParams = [];
-      
-      if (filters.courseId) {
-        queryParams.push(`courseId=${encodeURIComponent(filters.courseId)}`);
-      }
-      
-      if (filters.studentId) {
-        queryParams.push(`studentId=${encodeURIComponent(filters.studentId)}`);
-      }
-      
-      if (queryParams.length > 0) {
-        url += `?${queryParams.join('&')}`;
-      }
-
-      const response = await fetch(url);
-      const data = await response.json();
-
-      if (response.ok) {
-        setGrades(data.grades);
-      } else {
-        setError(data.message || '获取成绩列表失败');
-      }
-    } catch (error) {
-      console.error('获取成绩列表错误:', error);
-      setError('获取成绩列表时发生错误');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   // 处理搜索
   const handleSearch = (e) => {
     e.preventDefault();
     
     // 在内存中对成绩数据进行搜索
     if (!searchTerm.trim()) {
-      // 如果搜索词为空，重新获取所有成绩
-      fetchGrades();
+      // 如果搜索词为空，恢复所有成绩
+      setGrades(hardcodedGrades);
       return;
     }
     
     const term = searchTerm.toLowerCase();
-    const filteredGrades = grades.filter(grade => 
+    const filteredGrades = hardcodedGrades.filter(grade => 
       (grade.studentName && grade.studentName.toLowerCase().includes(term)) ||
       (grade.studentNumber && grade.studentNumber.toLowerCase().includes(term)) ||
       (grade.courseName && grade.courseName.toLowerCase().includes(term)) ||
@@ -173,6 +397,25 @@ export default function GradesList() {
       ...prev,
       [name]: value
     }));
+    
+    // 应用筛选器到硬编码数据
+    let filteredGrades = [...hardcodedGrades];
+    
+    // 如果有课程筛选
+    if (name === 'courseId' && value) {
+      filteredGrades = filteredGrades.filter(grade => grade.courseId === value);
+    } else if (filters.courseId) {
+      filteredGrades = filteredGrades.filter(grade => grade.courseId === filters.courseId);
+    }
+    
+    // 如果有学生筛选
+    if (name === 'studentId' && value) {
+      filteredGrades = filteredGrades.filter(grade => grade.studentId === value);
+    } else if (filters.studentId && name !== 'studentId') {
+      filteredGrades = filteredGrades.filter(grade => grade.studentId === filters.studentId);
+    }
+    
+    setGrades(filteredGrades);
   };
 
   // 排序成绩列表
@@ -229,22 +472,11 @@ export default function GradesList() {
       return;
     }
     
-    try {
-      // 逐个删除选中的成绩
-      for (const id of selectedGrades) {
-        await fetch(`/api/grades/${id}`, {
-          method: 'DELETE',
-        });
-      }
-      
-      // 刷新列表
-      fetchGrades();
-      setSelectedGrades([]);
-      alert('选中的成绩记录已成功删除');
-    } catch (error) {
-      console.error('批量删除成绩错误:', error);
-      alert('批量删除成绩时发生错误');
-    }
+    // 模拟删除操作
+    const updatedGrades = grades.filter(grade => !selectedGrades.includes(grade.id));
+    setGrades(updatedGrades);
+    setSelectedGrades([]);
+    alert('选中的成绩记录已成功删除');
   };
 
   // 处理单个删除
@@ -253,23 +485,10 @@ export default function GradesList() {
       return;
     }
     
-    try {
-      const response = await fetch(`/api/grades/${id}`, {
-        method: 'DELETE',
-      });
-      
-      if (response.ok) {
-        // 刷新列表
-        fetchGrades();
-        alert('成绩已成功删除');
-      } else {
-        const data = await response.json();
-        alert(data.message || '删除成绩失败');
-      }
-    } catch (error) {
-      console.error('删除成绩错误:', error);
-      alert('删除成绩时发生错误');
-    }
+    // 模拟删除操作
+    const updatedGrades = grades.filter(grade => grade.id !== id);
+    setGrades(updatedGrades);
+    alert('成绩已成功删除');
   };
 
   // 导出成绩为CSV

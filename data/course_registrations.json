@@ -1,0 +1,112 @@
+{
+  "registrations": [
+    {
+      "id": "e4e78a9c-6b8a-4b5d-a3a0-a1b2c3d4e5f6",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "status": "active",
+      "registrationDate": "2025-04-15T08:00:00.000Z",
+      "createdAt": "2025-04-15T08:00:00.000Z",
+      "updatedAt": "2025-04-15T08:00:00.000Z"
+    },
+    {
+      "id": "f5f89b0d-7c9b-5c6e-b4b1-b2c3d4e5f6g7",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "status": "active",
+      "registrationDate": "2025-04-15T09:00:00.000Z",
+      "createdAt": "2025-04-15T09:00:00.000Z",
+      "updatedAt": "2025-04-15T09:00:00.000Z"
+    },
+    {
+      "id": "reg-001",
+      "studentId": "student-001",
+      "courseId": "course-001",
+      "status": "active",
+      "registrationDate": "2023-08-22T00:00:00.000Z",
+      "createdAt": "2023-08-22T00:00:00.000Z",
+      "updatedAt": "2023-08-22T00:00:00.000Z"
+    },
+    {
+      "id": "reg-002",
+      "studentId": "student-002",
+      "courseId": "course-001",
+      "status": "active",
+      "registrationDate": "2023-08-22T00:00:00.000Z",
+      "createdAt": "2023-08-22T00:00:00.000Z",
+      "updatedAt": "2023-08-22T00:00:00.000Z"
+    },
+    {
+      "id": "reg-003",
+      "studentId": "student-003",
+      "courseId": "course-001",
+      "status": "active",
+      "registrationDate": "2023-08-23T00:00:00.000Z",
+      "createdAt": "2023-08-23T00:00:00.000Z",
+      "updatedAt": "2023-08-23T00:00:00.000Z"
+    },
+    {
+      "id": "reg-004",
+      "studentId": "student-001",
+      "courseId": "course-002",
+      "status": "active",
+      "registrationDate": "2023-08-22T00:00:00.000Z",
+      "createdAt": "2023-08-22T00:00:00.000Z",
+      "updatedAt": "2023-08-22T00:00:00.000Z"
+    },
+    {
+      "id": "reg-005",
+      "studentId": "student-002",
+      "courseId": "course-002",
+      "status": "active",
+      "registrationDate": "2023-08-22T00:00:00.000Z",
+      "createdAt": "2023-08-22T00:00:00.000Z",
+      "updatedAt": "2023-08-22T00:00:00.000Z"
+    },
+    {
+      "id": "reg-006",
+      "studentId": "student-001",
+      "courseId": "course-003",
+      "status": "active",
+      "registrationDate": "2023-08-23T00:00:00.000Z",
+      "createdAt": "2023-08-23T00:00:00.000Z",
+      "updatedAt": "2023-08-23T00:00:00.000Z"
+    },
+    {
+      "id": "reg-007",
+      "studentId": "student-003",
+      "courseId": "course-003",
+      "status": "active",
+      "registrationDate": "2023-08-23T00:00:00.000Z",
+      "createdAt": "2023-08-23T00:00:00.000Z",
+      "updatedAt": "2023-08-23T00:00:00.000Z"
+    },
+    {
+      "id": "reg-008",
+      "studentId": "student-002",
+      "courseId": "course-004",
+      "status": "active",
+      "registrationDate": "2023-08-24T00:00:00.000Z",
+      "createdAt": "2023-08-24T00:00:00.000Z",
+      "updatedAt": "2023-08-24T00:00:00.000Z"
+    },
+    {
+      "id": "reg-009",
+      "studentId": "student-003",
+      "courseId": "course-004",
+      "status": "active",
+      "registrationDate": "2023-08-24T00:00:00.000Z",
+      "createdAt": "2023-08-24T00:00:00.000Z",
+      "updatedAt": "2023-08-24T00:00:00.000Z"
+    },
+    {
+      "id": "reg-010",
+      "studentId": "student-001",
+      "courseId": "course-005",
+      "status": "active",
+      "registrationDate": "2023-08-25T00:00:00.000Z",
+      "createdAt": "2023-08-25T00:00:00.000Z",
+      "updatedAt": "2023-08-25T00:00:00.000Z"
+    }
+  ]
+}

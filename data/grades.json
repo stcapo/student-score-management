@@ -4,10 +4,715 @@
       "id": "ed3fe6b7-11a4-4908-a996-50ddfddba0fb",
       "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
       "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
-      "score": "25",
-      "comment": "aaa",
+      "score": "85",
+      "comment": "良好的表现，继续保持",
+      "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
       "createdAt": "2025-04-15T07:21:45.413Z",
       "updatedAt": "2025-04-15T07:21:45.413Z"
+    },
+    
+    // 为 Seriphine 添加成绩
+    {
+      "id": "grade-seriphine-001",
+      "courseId": "course-001",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "92",
+      "comment": "出色的算法理解和实现能力",
+      "examId": "exam-001",
+      "createdAt": "2023-11-05T00:00:00.000Z",
+      "updatedAt": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-002",
+      "courseId": "course-002",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "88",
+      "comment": "数学基础扎实，解题能力强",
+      "examId": "exam-003",
+      "createdAt": "2023-11-10T00:00:00.000Z",
+      "updatedAt": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-003",
+      "courseId": "course-003",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "90",
+      "comment": "网络协议理解透彻，实验操作熟练",
+      "examId": "exam-005",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-004",
+      "courseId": "course-004",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "86",
+      "comment": "软件工程概念掌握良好，项目完成度高",
+      "examId": "exam-007",
+      "createdAt": "2023-11-15T00:00:00.000Z",
+      "updatedAt": "2023-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-005",
+      "courseId": "course-005",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "94",
+      "comment": "数据库设计能力强，SQL编写熟练",
+      "examId": "exam-009",
+      "createdAt": "2023-11-16T00:00:00.000Z",
+      "updatedAt": "2023-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-006",
+      "courseId": "course-001",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "95",
+      "comment": "期末表现优秀，对复杂算法理解深入",
+      "examId": "exam-002",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "updatedAt": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-007",
+      "courseId": "course-002",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "87",
+      "comment": "高等数学期末考试表现良好",
+      "examId": "exam-004",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-008",
+      "courseId": "course-003",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "92",
+      "comment": "网络课程期末考试表现出色",
+      "examId": "exam-006",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "updatedAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-seriphine-009",
+      "courseId": "course-004",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "90",
+      "comment": "软件工程期末项目质量高，文档完善",
+      "examId": "exam-008",
+      "createdAt": "2024-01-18T00:00:00.000Z",
+      "updatedAt": "2024-01-18T00:00:00.000Z"
+    },
+    
+    // 为 Chen Xu 添加成绩
+    {
+      "id": "grade-chenxu-001",
+      "courseId": "course-001",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "88",
+      "comment": "算法理解良好，实现能力强",
+      "examId": "exam-001",
+      "createdAt": "2023-11-05T00:00:00.000Z",
+      "updatedAt": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-002",
+      "courseId": "course-002",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "91",
+      "comment": "数学基础扎实，解题思路清晰",
+      "examId": "exam-003",
+      "createdAt": "2023-11-10T00:00:00.000Z",
+      "updatedAt": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-003",
+      "courseId": "course-003",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "86",
+      "comment": "网络协议理解良好，实验操作熟练",
+      "examId": "exam-005",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-004",
+      "courseId": "course-004",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "89",
+      "comment": "软件工程概念掌握良好，项目质量佳",
+      "examId": "exam-007",
+      "createdAt": "2023-11-15T00:00:00.000Z",
+      "updatedAt": "2023-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-005",
+      "courseId": "course-005",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "90",
+      "comment": "数据库设计合理，SQL编写能力强",
+      "examId": "exam-009",
+      "createdAt": "2023-11-16T00:00:00.000Z",
+      "updatedAt": "2023-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-006",
+      "courseId": "course-001",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "92",
+      "comment": "期末表现优秀，对算法有深入理解",
+      "examId": "exam-002",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "updatedAt": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-007",
+      "courseId": "course-002",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "85",
+      "comment": "高等数学期末表现良好",
+      "examId": "exam-004",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-008",
+      "courseId": "course-003",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "88",
+      "comment": "网络课程期末考试表现良好",
+      "examId": "exam-006",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "updatedAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-chenxu-009",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "87",
+      "comment": "英语课程表现良好，口语需要加强",
+      "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
+      "createdAt": "2025-04-15T09:05:45.413Z",
+      "updatedAt": "2025-04-15T09:05:45.413Z"
+    },
+    {
+      "id": "grade-chenxu-010",
+      "courseId": "course-004",
+      "studentId": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "score": "93",
+      "comment": "软件工程期末项目出色，文档完善",
+      "examId": "exam-008",
+      "createdAt": "2024-01-18T00:00:00.000Z",
+      "updatedAt": "2024-01-18T00:00:00.000Z"
+    },
+    
+    // 为 zhangsan 添加成绩
+    {
+      "id": "grade-zhangsan-001",
+      "courseId": "course-001",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "85",
+      "comment": "算法理解良好，代码实现需加强",
+      "examId": "exam-001",
+      "createdAt": "2023-11-05T00:00:00.000Z",
+      "updatedAt": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-002",
+      "courseId": "course-002",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "83",
+      "comment": "数学课程理解良好，计算能力需提高",
+      "examId": "exam-003",
+      "createdAt": "2023-11-10T00:00:00.000Z",
+      "updatedAt": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-003",
+      "courseId": "course-003",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "88",
+      "comment": "网络知识掌握良好，实验表现优秀",
+      "examId": "exam-005",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-004",
+      "courseId": "course-004",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "82",
+      "comment": "软件工程基础良好，团队协作能力强",
+      "examId": "exam-007",
+      "createdAt": "2023-11-15T00:00:00.000Z",
+      "updatedAt": "2023-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-005",
+      "courseId": "course-005",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "86",
+      "comment": "数据库设计合理，SQL编写良好",
+      "examId": "exam-009",
+      "createdAt": "2023-11-16T00:00:00.000Z",
+      "updatedAt": "2023-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-006",
+      "courseId": "course-001",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "87",
+      "comment": "期末考试表现良好，算法理解有提升",
+      "examId": "exam-002",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "updatedAt": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-007",
+      "courseId": "course-002",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "80",
+      "comment": "高等数学期末表现尚可",
+      "examId": "exam-004",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-008",
+      "courseId": "course-003",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "89",
+      "comment": "网络课程期末考试表现良好",
+      "examId": "exam-006",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "updatedAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-zhangsan-009",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "82",
+      "comment": "英语基础良好，写作需要加强",
+      "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
+      "createdAt": "2025-04-15T09:06:45.413Z",
+      "updatedAt": "2025-04-15T09:06:45.413Z"
+    },
+    {
+      "id": "grade-zhangsan-010",
+      "courseId": "course-004",
+      "studentId": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "score": "84",
+      "comment": "软件工程期末项目完成度高",
+      "examId": "exam-008",
+      "createdAt": "2024-01-18T00:00:00.000Z",
+      "updatedAt": "2024-01-18T00:00:00.000Z"
+    },
+    
+    // 为 aaa 添加成绩
+    {
+      "id": "grade-aaa-001",
+      "courseId": "course-001",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "78",
+      "comment": "算法基础尚可，需加强复杂算法理解",
+      "examId": "exam-001",
+      "createdAt": "2023-11-05T00:00:00.000Z",
+      "updatedAt": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-002",
+      "courseId": "course-002",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "75",
+      "comment": "数学基础尚可，计算能力需加强",
+      "examId": "exam-003",
+      "createdAt": "2023-11-10T00:00:00.000Z",
+      "updatedAt": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-003",
+      "courseId": "course-003",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "80",
+      "comment": "网络知识掌握尚可，实验操作熟练",
+      "examId": "exam-005",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-004",
+      "courseId": "course-004",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "82",
+      "comment": "软件工程基础良好，项目完成度高",
+      "examId": "exam-007",
+      "createdAt": "2023-11-15T00:00:00.000Z",
+      "updatedAt": "2023-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-005",
+      "courseId": "course-005",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "79",
+      "comment": "数据库设计基本合理，SQL掌握尚可",
+      "examId": "exam-009",
+      "createdAt": "2023-11-16T00:00:00.000Z",
+      "updatedAt": "2023-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-006",
+      "courseId": "course-001",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "81",
+      "comment": "期末表现有所提升，算法理解更深入",
+      "examId": "exam-002",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "updatedAt": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-007",
+      "courseId": "course-002",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "76",
+      "comment": "高等数学期末表现尚可",
+      "examId": "exam-004",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-008",
+      "courseId": "course-003",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "83",
+      "comment": "网络课程期末考试有所进步",
+      "examId": "exam-006",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "updatedAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-aaa-009",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "77",
+      "comment": "英语基础尚可，听力需要加强",
+      "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
+      "createdAt": "2025-04-15T09:07:45.413Z",
+      "updatedAt": "2025-04-15T09:07:45.413Z"
+    },
+    {
+      "id": "grade-aaa-010",
+      "courseId": "course-004",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "85",
+      "comment": "软件工程期末项目完成良好",
+      "examId": "exam-008",
+      "createdAt": "2024-01-18T00:00:00.000Z",
+      "updatedAt": "2024-01-18T00:00:00.000Z"
+    },
+    
+    // 张三（student-001）的成绩
+    {
+      "id": "grade-001",
+      "courseId": "course-001",
+      "studentId": "student-001",
+      "score": "89",
+      "comment": "优秀的表现，对算法理解深入",
+      "examId": "exam-001",
+      "createdAt": "2023-11-05T00:00:00.000Z",
+      "updatedAt": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-002",
+      "courseId": "course-002",
+      "studentId": "student-001",
+      "score": "85",
+      "comment": "数学基础扎实，解题思路清晰",
+      "examId": "exam-003",
+      "createdAt": "2023-11-10T00:00:00.000Z",
+      "updatedAt": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-003",
+      "courseId": "course-003",
+      "studentId": "student-001",
+      "score": "91",
+      "comment": "对网络协议理解深入，实验表现优秀",
+      "examId": "exam-005",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-011",
+      "courseId": "course-001",
+      "studentId": "student-001",
+      "score": "93",
+      "comment": "期末考试表现优秀，掌握了高级算法",
+      "examId": "exam-002",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "updatedAt": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-012",
+      "courseId": "course-002",
+      "studentId": "student-001",
+      "score": "88",
+      "comment": "高等数学期末考试表现良好",
+      "examId": "exam-004",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-013",
+      "courseId": "course-003",
+      "studentId": "student-001",
+      "score": "94",
+      "comment": "网络课程期末考试表现极为出色",
+      "examId": "exam-006",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "updatedAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s001-007",
+      "courseId": "course-004",
+      "studentId": "student-001",
+      "score": "87",
+      "comment": "软件工程期中表现良好",
+      "examId": "exam-007",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s001-008",
+      "courseId": "course-004",
+      "studentId": "student-001",
+      "score": "90",
+      "comment": "软件工程期末项目质量高",
+      "examId": "exam-008",
+      "createdAt": "2024-01-18T00:00:00.000Z",
+      "updatedAt": "2024-01-18T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s001-009",
+      "courseId": "course-005",
+      "studentId": "student-001",
+      "score": "92",
+      "comment": "数据库系统掌握良好",
+      "examId": "exam-009",
+      "createdAt": "2023-11-16T00:00:00.000Z",
+      "updatedAt": "2023-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s001-010",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "studentId": "student-001",
+      "score": "88",
+      "comment": "英语能力良好，表达流畅",
+      "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
+      "createdAt": "2025-04-15T09:08:45.413Z",
+      "updatedAt": "2025-04-15T09:08:45.413Z"
+    },
+    
+    // 李四（student-002）的成绩
+    {
+      "id": "grade-004",
+      "courseId": "course-001",
+      "studentId": "student-002",
+      "score": "92",
+      "comment": "出色的作业和考试表现",
+      "examId": "exam-001",
+      "createdAt": "2023-11-05T00:00:00.000Z",
+      "updatedAt": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-005",
+      "courseId": "course-002",
+      "studentId": "student-002",
+      "score": "80",
+      "comment": "基本掌握数学概念，应用能力有待提高",
+      "examId": "exam-003",
+      "createdAt": "2023-11-10T00:00:00.000Z",
+      "updatedAt": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-008",
+      "courseId": "course-004",
+      "studentId": "student-002",
+      "score": "88",
+      "comment": "团队合作能力强，项目管理有条理",
+      "examId": "exam-007",
+      "createdAt": "2023-11-15T00:00:00.000Z",
+      "updatedAt": "2023-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-014",
+      "courseId": "course-001",
+      "studentId": "student-002",
+      "score": "95",
+      "comment": "期末考试表现极为出色",
+      "examId": "exam-002",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "updatedAt": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-015",
+      "courseId": "course-002",
+      "studentId": "student-002",
+      "score": "82",
+      "comment": "高等数学期末有所进步",
+      "examId": "exam-004",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s002-006",
+      "courseId": "course-003",
+      "studentId": "student-002",
+      "score": "86",
+      "comment": "网络课程掌握良好",
+      "examId": "exam-005",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s002-007",
+      "courseId": "course-003",
+      "studentId": "student-002",
+      "score": "89",
+      "comment": "网络期末考试表现良好",
+      "examId": "exam-006",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "updatedAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s002-008",
+      "courseId": "course-004",
+      "studentId": "student-002",
+      "score": "92",
+      "comment": "软件工程期末项目完成度高",
+      "examId": "exam-008",
+      "createdAt": "2024-01-18T00:00:00.000Z",
+      "updatedAt": "2024-01-18T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s002-009",
+      "courseId": "course-005",
+      "studentId": "student-002",
+      "score": "87",
+      "comment": "数据库期中考试表现良好",
+      "examId": "exam-009",
+      "createdAt": "2023-11-16T00:00:00.000Z",
+      "updatedAt": "2023-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s002-010",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "studentId": "student-002",
+      "score": "90",
+      "comment": "英语能力出色，听说读写全面",
+      "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
+      "createdAt": "2025-04-15T09:09:45.413Z",
+      "updatedAt": "2025-04-15T09:09:45.413Z"
+    },
+    
+    // 王五（student-003）的成绩
+    {
+      "id": "grade-006",
+      "courseId": "course-001",
+      "studentId": "student-003",
+      "score": "78",
+      "comment": "基本掌握了课程内容，算法理解有待加强",
+      "examId": "exam-001",
+      "createdAt": "2023-11-05T00:00:00.000Z",
+      "updatedAt": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-007",
+      "courseId": "course-003",
+      "studentId": "student-003",
+      "score": "76",
+      "comment": "基本掌握网络概念，安全方面有所欠缺",
+      "examId": "exam-005",
+      "createdAt": "2023-11-12T00:00:00.000Z",
+      "updatedAt": "2023-11-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-009",
+      "courseId": "course-004",
+      "studentId": "student-003",
+      "score": "85",
+      "comment": "项目完成度高，文档编写清晰",
+      "examId": "exam-007",
+      "createdAt": "2023-11-15T00:00:00.000Z",
+      "updatedAt": "2023-11-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-016",
+      "courseId": "course-001",
+      "studentId": "student-003",
+      "score": "80",
+      "comment": "期末考试有所进步",
+      "examId": "exam-002",
+      "createdAt": "2024-01-12T00:00:00.000Z",
+      "updatedAt": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s003-005",
+      "courseId": "course-002",
+      "studentId": "student-003",
+      "score": "75",
+      "comment": "高等数学期中考试表现一般",
+      "examId": "exam-003",
+      "createdAt": "2023-11-10T00:00:00.000Z",
+      "updatedAt": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s003-006",
+      "courseId": "course-002",
+      "studentId": "student-003",
+      "score": "78",
+      "comment": "高等数学期末有所进步",
+      "examId": "exam-004",
+      "createdAt": "2024-01-15T00:00:00.000Z",
+      "updatedAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s003-007",
+      "courseId": "course-003",
+      "studentId": "student-003",
+      "score": "79",
+      "comment": "网络课程期末表现有进步",
+      "examId": "exam-006",
+      "createdAt": "2024-01-10T00:00:00.000Z",
+      "updatedAt": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s003-008",
+      "courseId": "course-004",
+      "studentId": "student-003",
+      "score": "87",
+      "comment": "软件工程期末项目完成良好",
+      "examId": "exam-008",
+      "createdAt": "2024-01-18T00:00:00.000Z",
+      "updatedAt": "2024-01-18T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s003-009",
+      "courseId": "course-005",
+      "studentId": "student-003",
+      "score": "82",
+      "comment": "数据库基础掌握良好",
+      "examId": "exam-009",
+      "createdAt": "2023-11-16T00:00:00.000Z",
+      "updatedAt": "2023-11-16T00:00:00.000Z"
+    },
+    {
+      "id": "grade-s003-010",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "studentId": "student-003",
+      "score": "82",
+      "comment": "英语基础良好，口语需加强",
+      "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
+      "createdAt": "2025-04-15T09:10:45.413Z",
+      "updatedAt": "2025-04-15T09:10:45.413Z"
     }
   ]
 }

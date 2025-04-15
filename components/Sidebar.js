@@ -91,7 +91,7 @@ export default function Sidebar({ user, isOpen, toggleSidebar }) {
         icon: <FaChartBar className="w-5 h-5" /> 
       },
       { 
-        path: '/my-exams', 
+        path: '/exams', 
         name: '考试安排', 
         icon: <FaClipboardList className="w-5 h-5" /> 
       }
@@ -104,11 +104,6 @@ export default function Sidebar({ user, isOpen, toggleSidebar }) {
       path: '/notifications', 
       name: '我的通知', 
       icon: <FaBullhorn className="w-5 h-5" /> 
-    },
-    { 
-      path: '/reports', 
-      name: '报表中心', 
-      icon: <FaFileAlt className="w-5 h-5" /> 
     },
     { 
       path: '/profile', 

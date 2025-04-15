@@ -38,7 +38,95 @@
       "email": "admin@qq.com",
       "role": "admin",
       "createdAt": "2025-04-15T03:49:30.942Z",
-      "updatedAt": "2025-04-15T03:49:30.942Z"
+      "updatedAt": "2025-04-15T08:49:21.300Z",
+      "phone": "17855533635",
+      "address": "上海市",
+      "bio": "啊啊啊"
+    },
+    {
+      "id": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "username": "a a a",
+      "password": "$2a$10$MdEosUhDGeKHhUXzGhzLLOSPXUOU9CIIi1oOVBwaCbxJrFCTHiGX2",
+      "name": "aaa",
+      "email": "aaa@aaa.com",
+      "role": "student",
+      "createdAt": "2025-04-15T08:28:15.487Z",
+      "updatedAt": "2025-04-15T08:28:15.487Z"
+    },
+    {
+      "id": "teacher-001",
+      "username": "teacher1",
+      "password": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy",
+      "role": "teacher",
+      "name": "王老师",
+      "email": "teacher1@example.com",
+      "phone": "13800138001",
+      "address": "北京市海淀区",
+      "bio": "计算机科学教授，专注于算法和数据结构教学10年",
+      "createdAt": "2023-01-02T00:00:00.000Z",
+      "updatedAt": "2023-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "teacher-002",
+      "username": "teacher2",
+      "password": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy",
+      "role": "teacher",
+      "name": "李老师",
+      "email": "teacher2@example.com",
+      "phone": "13800138002",
+      "address": "上海市浦东新区",
+      "bio": "数学系教授，专注于高等数学教学15年",
+      "createdAt": "2023-01-03T00:00:00.000Z",
+      "updatedAt": "2023-01-03T00:00:00.000Z"
+    },
+    {
+      "id": "student-001",
+      "username": "student1",
+      "password": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy",
+      "role": "student",
+      "name": "张同学",
+      "email": "student1@example.com",
+      "phone": "13900139001",
+      "address": "广州市天河区",
+      "bio": "计算机科学专业大三学生，对人工智能有浓厚兴趣",
+      "createdAt": "2023-01-04T00:00:00.000Z",
+      "updatedAt": "2023-01-04T00:00:00.000Z"
+    },
+    {
+      "id": "student-002",
+      "username": "student2",
+      "password": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy",
+      "role": "student",
+      "name": "刘同学",
+      "email": "student2@example.com",
+      "phone": "13900139002",
+      "address": "深圳市南山区",
+      "bio": "软件工程专业大二学生，喜欢参与开源项目",
+      "createdAt": "2023-01-05T00:00:00.000Z",
+      "updatedAt": "2023-01-05T00:00:00.000Z"
+    },
+    {
+      "id": "student-003",
+      "username": "student3",
+      "password": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy",
+      "role": "student",
+      "name": "赵同学",
+      "email": "student3@example.com",
+      "phone": "13900139003",
+      "address": "成都市武侯区",
+      "bio": "数据科学专业大四学生，正在寻找实习机会",
+      "createdAt": "2023-01-06T00:00:00.000Z",
+      "updatedAt": "2023-01-06T00:00:00.000Z"
+    },
+    {
+      "id": "182d8e54-84a1-4e4e-a5ec-823892bdb5bd",
+      "username": "teacher",
+      "password": "$2a$10$L1myWpyQgeln08nSMs4oO.Y/Ejy9nsoc2j5SGnm8hGamyaqF2gJNC",
+      "name": "阿萨",
+      "email": "4604@qq.com",
+      "role": "teacher",
+      "createdAt": "2025-04-15T09:40:10.586Z",
+      "updatedAt": "2025-04-15T09:40:10.586Z"
     }
   ]
 }
