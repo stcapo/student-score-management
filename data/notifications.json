@@ -153,6 +153,20 @@
       "updatedAt": "2024-01-15T00:00:00.000Z",
       "creatorId": "admin-001",
       "creatorName": "系统管理员"
+    },
+    {
+      "id": "0d0a4662-6670-4500-bfdb-689db038fed2",
+      "title": "测试公告",
+      "content": "aaa",
+      "type": "public",
+      "targetRole": null,
+      "targetUserId": null,
+      "priority": "normal",
+      "expireAt": null,
+      "createdAt": "2025-04-15T09:56:18.696Z",
+      "updatedAt": "2025-04-15T09:56:18.696Z",
+      "creatorId": "53b31525-1dde-4c69-b1c4-3748295b21c4",
+      "creatorName": "admin123"
     }
   ]
 }

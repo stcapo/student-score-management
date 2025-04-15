@@ -18,7 +18,10 @@
       "email": "460418637@qq.com",
       "role": "student",
       "createdAt": "2025-04-15T03:32:08.938Z",
-      "updatedAt": "2025-04-15T03:32:08.938Z"
+      "updatedAt": "2025-04-15T09:49:12.980Z",
+      "phone": "17887874545",
+      "address": "Maanshan,Anhui,China",
+      "bio": "aaa"
     },
     {
       "id": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
@@ -126,7 +129,10 @@
       "email": "4604@qq.com",
       "role": "teacher",
       "createdAt": "2025-04-15T09:40:10.586Z",
-      "updatedAt": "2025-04-15T09:40:10.586Z"
+      "updatedAt": "2025-04-15T09:50:46.282Z",
+      "phone": "",
+      "address": "",
+      "bio": "aaaa"
     }
   ]
 }

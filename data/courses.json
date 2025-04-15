@@ -169,6 +169,23 @@
       "status": "inactive",
       "createdAt": "2023-12-18T00:00:00.000Z",
       "updatedAt": "2023-12-18T00:00:00.000Z"
+    },
+    {
+      "id": "8a28e002-afb0-44b8-ae1b-e01c9f355e47",
+      "name": "商务英语",
+      "code": "EN101",
+      "description": "aaaa",
+      "credits": "1",
+      "department": "CS1",
+      "semester": "2025-2026 S1",
+      "teacherId": "182d8e54-84a1-4e4e-a5ec-823892bdb5bd",
+      "startDate": "2025-04-17",
+      "endDate": "2025-04-18",
+      "capacity": "30",
+      "location": "地下一层",
+      "status": "active",
+      "createdAt": "2025-04-15T09:54:14.616Z",
+      "updatedAt": "2025-04-15T09:54:14.616Z"
     }
   ]
 }

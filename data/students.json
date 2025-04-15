@@ -86,9 +86,9 @@
       "email": "student5@example.com",
       "phone": "13900139005",
       "address": "上海市浦东新区",
-      "status": "active",
+      "status": "inactive",
       "createdAt": "2023-01-08T00:00:00.000Z",
-      "updatedAt": "2023-01-08T00:00:00.000Z"
+      "updatedAt": "2025-04-15T09:52:41.097Z"
     },
     {
       "id": "student-006",
@@ -149,6 +149,21 @@
       "status": "active",
       "createdAt": "2023-01-12T00:00:00.000Z",
       "updatedAt": "2023-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "c7ad6499-b828-499e-baed-b678788d59aa",
+      "name": "lisi",
+      "studentId": "12345678",
+      "gender": "男",
+      "birthdate": "2011-02-16",
+      "class": "A101",
+      "department": "CS1",
+      "email": "abc101@qq.com",
+      "phone": "17887874545",
+      "address": "Maanshan,Anhui,China\n雨山区",
+      "status": "active",
+      "createdAt": "2025-04-15T09:51:33.124Z",
+      "updatedAt": "2025-04-15T09:52:01.662Z"
     }
   ]
 }

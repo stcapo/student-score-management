@@ -175,6 +175,22 @@
       "creatorName": "admin123",
       "createdAt": "2025-04-15T09:35:19.022Z",
       "updatedAt": "2025-04-15T09:35:19.022Z"
+    },
+    {
+      "id": "9219e3dc-3778-459c-aeee-0bdfe87cd1c2",
+      "title": "测试",
+      "description": "aaa",
+      "courseId": "course-001",
+      "date": "2025-04-16T15:59:00.000Z",
+      "duration": 120,
+      "location": "地下一层",
+      "examType": "final",
+      "totalScore": 100,
+      "passingScore": 60,
+      "creatorId": "182d8e54-84a1-4e4e-a5ec-823892bdb5bd",
+      "creatorName": "teacher",
+      "createdAt": "2025-04-15T09:55:34.512Z",
+      "updatedAt": "2025-04-15T09:55:34.512Z"
     }
   ]
 }
