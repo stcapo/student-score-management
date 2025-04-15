@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "id": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "name": "Seriphine",
+      "studentId": "198263532",
+      "gender": "男",
+      "birthdate": "2025-04-10",
+      "class": "A205",
+      "department": "计算机科学与技术学院",
+      "email": "460418637@qq.com",
+      "phone": "17855533635",
+      "address": "Maanshan,Anhui,China\nYUSHANQU",
+      "status": "active",
+      "createdAt": "2025-04-15T03:55:50.346Z",
+      "updatedAt": "2025-04-15T03:56:34.060Z"
+    }
+  ]
+}

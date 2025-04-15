@@ -1,0 +1,13 @@
+{
+  "grades": [
+    {
+      "id": "ed3fe6b7-11a4-4908-a996-50ddfddba0fb",
+      "courseId": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "studentId": "2de53b2e-48b6-4554-901f-fbdc7ca6f276",
+      "score": "25",
+      "comment": "aaa",
+      "createdAt": "2025-04-15T07:21:45.413Z",
+      "updatedAt": "2025-04-15T07:21:45.413Z"
+    }
+  ]
+}

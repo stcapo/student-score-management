@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "admin-001",
+      "username": "admin",
+      "password": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy",
+      "role": "admin",
+      "name": "系统管理员",
+      "email": "admin@example.com",
+      "createdAt": "2023-01-01T00:00:00.000Z",
+      "updatedAt": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "04a652d1-2619-4833-8380-073ff3f6d716",
+      "username": "460418637",
+      "password": "$2a$10$RRIaFGS.lWFX2OpwI2IxFOn8YtV/Bgi4ydS/2o//12KsR8mcFPhdG",
+      "name": "Chen Xu",
+      "email": "460418637@qq.com",
+      "role": "student",
+      "createdAt": "2025-04-15T03:32:08.938Z",
+      "updatedAt": "2025-04-15T03:32:08.938Z"
+    },
+    {
+      "id": "3e5414be-8216-42a0-b4b1-d80e2db2c4ee",
+      "username": "aaa",
+      "password": "$2a$10$MwlCkQJYO1XE2aHYLyxpaeDawFqmzMcMHSf02OznzMx6ieOEdIIcC",
+      "name": "zhangsan",
+      "email": "xcggyx@gmail.com",
+      "role": "student",
+      "createdAt": "2025-04-15T03:35:53.207Z",
+      "updatedAt": "2025-04-15T03:35:53.207Z"
+    },
+    {
+      "id": "53b31525-1dde-4c69-b1c4-3748295b21c4",
+      "username": "admin123",
+      "password": "$2a$10$LYGApYQujrAEhxEGGzCuTuVwldRdOpa/qlGaEE4XBoK/Xqlnnk1HG",
+      "name": "admin",
+      "email": "admin@qq.com",
+      "role": "admin",
+      "createdAt": "2025-04-15T03:49:30.942Z",
+      "updatedAt": "2025-04-15T03:49:30.942Z"
+    }
+  ]
+}

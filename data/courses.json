@@ -1,0 +1,21 @@
+{
+  "courses": [
+    {
+      "id": "a6db156c-eac4-44a5-a0af-a78e4048193c",
+      "name": "English",
+      "code": "101",
+      "description": "aaa",
+      "credits": "1.5",
+      "department": "计算机科学与技术学院",
+      "semester": "2023-2024 第一学期",
+      "teacherId": "admin-001",
+      "startDate": "2025-04-15",
+      "endDate": "2025-04-19",
+      "capacity": "25",
+      "location": "A203",
+      "status": "active",
+      "createdAt": "2025-04-15T04:07:23.680Z",
+      "updatedAt": "2025-04-15T04:07:23.680Z"
+    }
+  ]
+}
