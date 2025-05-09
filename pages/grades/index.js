@@ -556,13 +556,7 @@ export default function GradesList() {
               </Link>
             )}
             
-            <Link 
-              href="/grades/analysis" 
-              className="flex items-center px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
-            >
-              <FaChartBar className="mr-2" />
-              成绩分析
-            </Link>
+            
           </div>
         </div>
 
