@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { FaSearch, FaPlus, FaEdit, FaTrash, FaEye, FaUserGraduate, FaSortAlphaDown, FaSortAlphaUp } from 'react-icons/fa';
+import { FaSearch, FaPlus, FaEdit, FaTrash, FaEye, FaUserGraduate, FaSortAlphaDown, FaSortAlphaUp, FaExclamationTriangle } from 'react-icons/fa';
 
 export default function StudentList() {
   const router = useRouter();
@@ -15,6 +15,7 @@ export default function StudentList() {
   const [selectedStudents, setSelectedStudents] = useState([]);
   const [user, setUser] = useState(null);
   const [filterStatus, setFilterStatus] = useState('active');
+  const [trendWarnings, setTrendWarnings] = useState({});
 
   useEffect(() => {
     // 获取用户信息
@@ -26,6 +27,13 @@ export default function StudentList() {
     // 获取学生数据
     fetchStudents();
   }, [filterStatus]);
+
+  // 单独的useEffect来处理趋势预警数据
+  useEffect(() => {
+    if (user && (user.role === 'admin' || user.role === 'teacher')) {
+      fetchTrendWarnings();
+    }
+  }, [user]);
 
   // 获取学生列表
   const fetchStudents = async () => {
@@ -47,7 +55,7 @@ export default function StudentList() {
         if (filterStatus !== 'all') {
           filteredStudents = data.students.filter(student => student.status === filterStatus);
         }
-        
+
         setStudents(filteredStudents);
       } else {
         setError(data.message || '获取学生列表失败');
@@ -57,6 +65,25 @@ export default function StudentList() {
       setError('获取学生列表时发生错误');
     } finally {
       setLoading(false);
+    }
+  };
+
+  // 获取趋势预警数据
+  const fetchTrendWarnings = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch('/api/trends', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setTrendWarnings(data.data.studentWarningMap || {});
+      }
+    } catch (error) {
+      console.error('获取趋势预警数据错误:', error);
     }
   };
 
@@ -80,7 +107,7 @@ export default function StudentList() {
   const sortedStudents = [...students].sort((a, b) => {
     let valueA = a[sortField] || '';
     let valueB = b[sortField] || '';
-    
+
     // 字符串比较
     if (typeof valueA === 'string') {
       valueA = valueA.toLowerCase();
@@ -88,7 +115,7 @@ export default function StudentList() {
     if (typeof valueB === 'string') {
       valueB = valueB.toLowerCase();
     }
-    
+
     // 排序方向
     if (sortDirection === 'asc') {
       return valueA > valueB ? 1 : -1;
@@ -118,11 +145,11 @@ export default function StudentList() {
   // 处理批量删除
   const handleBatchDelete = async () => {
     if (selectedStudents.length === 0) return;
-    
+
     if (!confirm(`确定要删除选中的 ${selectedStudents.length} 名学生吗？`)) {
       return;
     }
-    
+
     try {
       // 逐个删除选中的学生
       for (const id of selectedStudents) {
@@ -130,7 +157,7 @@ export default function StudentList() {
           method: 'DELETE',
         });
       }
-      
+
       // 刷新列表
       fetchStudents();
       setSelectedStudents([]);
@@ -146,12 +173,12 @@ export default function StudentList() {
     if (!confirm(`确定要删除学生 "${name}" 吗？`)) {
       return;
     }
-    
+
     try {
       const response = await fetch(`/api/students/${id}`, {
         method: 'DELETE',
       });
-      
+
       if (response.ok) {
         // 刷新列表
         fetchStudents();
@@ -175,10 +202,10 @@ export default function StudentList() {
       <div className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">学生管理</h1>
-          
+
           {(user?.role === 'admin' || user?.role === 'teacher') && (
-            <Link 
-              href="/students/add" 
+            <Link
+              href="/students/add"
               className="flex items-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
             >
               <FaPlus className="mr-2" />
@@ -264,8 +291,8 @@ export default function StudentList() {
                         />
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('studentId')}
                     >
@@ -276,8 +303,8 @@ export default function StudentList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('name')}
                     >
@@ -288,8 +315,8 @@ export default function StudentList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('gender')}
                     >
@@ -300,8 +327,8 @@ export default function StudentList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('class')}
                     >
@@ -312,8 +339,8 @@ export default function StudentList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('department')}
                     >
@@ -324,6 +351,11 @@ export default function StudentList() {
                         )}
                       </div>
                     </th>
+                    {(user?.role === 'admin' || user?.role === 'teacher') && (
+                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        成绩预警
+                      </th>
+                    )}
                     <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                       操作
                     </th>
@@ -371,6 +403,31 @@ export default function StudentList() {
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-sm text-gray-900">{student.department}</div>
                       </td>
+                      {(user?.role === 'admin' || user?.role === 'teacher') && (
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          {trendWarnings[student.id] ? (
+                            <div className="flex items-center">
+                              <FaExclamationTriangle className={`h-4 w-4 mr-2 ${
+                                trendWarnings[student.id].highestSeverity >= 4 ? 'text-red-500' :
+                                trendWarnings[student.id].highestSeverity >= 3 ? 'text-yellow-500' :
+                                'text-orange-500'
+                              }`} />
+                              <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                                trendWarnings[student.id].highestSeverity >= 4 ? 'bg-red-100 text-red-800' :
+                                trendWarnings[student.id].highestSeverity >= 3 ? 'bg-yellow-100 text-yellow-800' :
+                                'bg-orange-100 text-orange-800'
+                              }`}>
+                                {trendWarnings[student.id].highestSeverity >= 4 ? '严重预警' :
+                                 trendWarnings[student.id].highestSeverity >= 3 ? '中等预警' : '轻微预警'}
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                              正常
+                            </span>
+                          )}
+                        </td>
+                      )}
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <div className="flex items-center justify-end space-x-2">
                           <Link

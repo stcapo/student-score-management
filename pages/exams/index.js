@@ -42,17 +42,147 @@ export default function ExamList() {
       const data = await response.json();
 
       if (response.ok) {
+        // 添加模拟的未来考试数据
+        const mockFutureExams = [
+          {
+            id: 'mock-exam-001',
+            title: '操作系统期中考试',
+            description: '进程管理、内存管理、文件系统等核心概念',
+            courseId: 'course-006',
+            courseName: '操作系统',
+            date: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(), // 7天后
+            duration: 120,
+            location: '计算机楼A301',
+            examType: 'midterm',
+            totalScore: 100,
+            passingScore: 60,
+            creatorId: 'teacher-003',
+            creatorName: '张老师',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+          },
+          {
+            id: 'mock-exam-002',
+            title: '概率论与数理统计期末考试',
+            description: '概率分布、假设检验、回归分析',
+            courseId: 'course-007',
+            courseName: '概率论与数理统计',
+            date: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(), // 14天后
+            duration: 150,
+            location: '理学楼B205',
+            examType: 'final',
+            totalScore: 100,
+            passingScore: 60,
+            creatorId: 'teacher-004',
+            creatorName: '赵老师',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+          },
+          {
+            id: 'mock-exam-003',
+            title: '人工智能导论期中考试',
+            description: '机器学习基础、神经网络、搜索算法',
+            courseId: 'course-008',
+            courseName: '人工智能导论',
+            date: new Date(Date.now() + 21 * 24 * 60 * 60 * 1000).toISOString(), // 21天后
+            duration: 120,
+            location: '计算机楼B402',
+            examType: 'midterm',
+            totalScore: 100,
+            passingScore: 60,
+            creatorId: 'teacher-005',
+            creatorName: '陈老师',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+          },
+          {
+            id: 'mock-exam-004',
+            title: '编译原理期末考试',
+            description: '词法分析、语法分析、代码生成',
+            courseId: 'course-009',
+            courseName: '编译原理',
+            date: new Date(Date.now() + 28 * 24 * 60 * 60 * 1000).toISOString(), // 28天后
+            duration: 150,
+            location: '计算机楼A205',
+            examType: 'final',
+            totalScore: 100,
+            passingScore: 60,
+            creatorId: 'teacher-006',
+            creatorName: '刘老师',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+          },
+          {
+            id: 'mock-exam-005',
+            title: '商务英语期中考试',
+            description: '商务写作、口语表达、商务礼仪',
+            courseId: 'course-010',
+            courseName: '商务英语',
+            date: new Date(Date.now() + 35 * 24 * 60 * 60 * 1000).toISOString(), // 35天后
+            duration: 120,
+            location: '外语楼C301',
+            examType: 'midterm',
+            totalScore: 100,
+            passingScore: 60,
+            creatorId: 'teacher-007',
+            creatorName: '王老师',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+          },
+          {
+            id: 'mock-exam-006',
+            title: '数据库系统实践考试',
+            description: '数据库设计、SQL优化、事务处理',
+            courseId: 'course-005',
+            courseName: '数据库原理',
+            date: new Date(Date.now() + 42 * 24 * 60 * 60 * 1000).toISOString(), // 42天后
+            duration: 180,
+            location: '实验楼D301',
+            examType: 'practical',
+            totalScore: 100,
+            passingScore: 60,
+            creatorId: 'teacher-002',
+            creatorName: '李老师',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+          }
+        ];
+
+        // 为原始数据添加课程名称映射
+        const courseNameMap = {
+          'course-001': '数据结构与算法',
+          'course-002': '高等数学',
+          'course-003': '计算机网络',
+          'course-004': '软件工程',
+          'course-005': '数据库原理',
+          'course-006': '操作系统',
+          'course-007': '概率论与数理统计',
+          'course-008': '人工智能导论',
+          'course-009': '编译原理',
+          'course-010': '商务英语',
+          'a6db156c-eac4-44a5-a0af-a78e4048193c': 'English'
+        };
+
+        // 为原始数据添加courseName字段
+        const enhancedOriginalExams = data.exams.map(exam => ({
+          ...exam,
+          courseName: courseNameMap[exam.courseId] || '未知课程'
+        }));
+
+        // 合并真实数据和模拟数据
+        const allExams = [...enhancedOriginalExams, ...mockFutureExams];
+
         // 根据状态筛选
-        let filteredExams = data.exams;
+        let filteredExams = allExams;
         if (filterStatus !== 'all') {
           const now = new Date();
           if (filterStatus === 'upcoming') {
-            filteredExams = data.exams.filter(exam => new Date(exam.date) >= now);
+            filteredExams = allExams.filter(exam => new Date(exam.date) >= now);
           } else if (filterStatus === 'completed') {
-            filteredExams = data.exams.filter(exam => new Date(exam.date) < now);
+            filteredExams = allExams.filter(exam => new Date(exam.date) < now);
           }
         }
-        
+
         setExams(filteredExams);
       } else {
         setError(data.message || '获取考试列表失败');
@@ -85,7 +215,7 @@ export default function ExamList() {
   const sortedExams = [...exams].sort((a, b) => {
     let valueA = a[sortField] || '';
     let valueB = b[sortField] || '';
-    
+
     // 日期特殊处理
     if (sortField === 'date') {
       valueA = new Date(valueA);
@@ -98,7 +228,7 @@ export default function ExamList() {
     if (typeof valueB === 'string') {
       valueB = valueB.toLowerCase();
     }
-    
+
     // 排序方向
     if (sortDirection === 'asc') {
       return valueA > valueB ? 1 : -1;
@@ -128,11 +258,11 @@ export default function ExamList() {
   // 处理批量删除
   const handleBatchDelete = async () => {
     if (selectedExams.length === 0) return;
-    
+
     if (!confirm(`确定要删除选中的 ${selectedExams.length} 个考试吗？`)) {
       return;
     }
-    
+
     try {
       // 逐个删除选中的考试
       for (const id of selectedExams) {
@@ -140,7 +270,7 @@ export default function ExamList() {
           method: 'DELETE',
         });
       }
-      
+
       // 刷新列表
       fetchExams();
       setSelectedExams([]);
@@ -156,12 +286,12 @@ export default function ExamList() {
     if (!confirm(`确定要删除考试 "${title}" 吗？`)) {
       return;
     }
-    
+
     try {
       const response = await fetch(`/api/exams/${id}`, {
         method: 'DELETE',
       });
-      
+
       if (response.ok) {
         // 刷新列表
         fetchExams();
@@ -186,7 +316,7 @@ export default function ExamList() {
   const getExamStatus = (exam) => {
     const now = new Date();
     const examDate = new Date(exam.date);
-    
+
     if (examDate > now) {
       return { label: '未开始', className: 'bg-blue-100 text-blue-800' };
     } else if (examDate <= now) {
@@ -203,10 +333,10 @@ export default function ExamList() {
       <div className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">考试管理</h1>
-          
+
           {(user?.role === 'admin' || user?.role === 'teacher') && (
-            <Link 
-              href="/exams/add" 
+            <Link
+              href="/exams/add"
               className="flex items-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
             >
               <FaPlus className="mr-2" />
@@ -292,8 +422,8 @@ export default function ExamList() {
                         />
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('title')}
                     >
@@ -304,8 +434,8 @@ export default function ExamList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('courseName')}
                     >
@@ -316,8 +446,8 @@ export default function ExamList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('date')}
                     >
@@ -328,8 +458,8 @@ export default function ExamList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('location')}
                     >
@@ -340,8 +470,8 @@ export default function ExamList() {
                         )}
                       </div>
                     </th>
-                    <th 
-                      scope="col" 
+                    <th
+                      scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
                       onClick={() => handleSort('duration')}
                     >

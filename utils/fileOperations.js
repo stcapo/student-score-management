@@ -1,9 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 
-// 读取JSON文件
+// Get the project's root directory
+const projectRoot = process.cwd();
+
+// Function to read JSON file using a path relative to the project root
 export const readJSONFile = (filePath) => {
-  const absolutePath = path.resolve('D://AA//student-grade-system', filePath);
+  // Construct the absolute path by joining the project root and the relative path
+  const absolutePath = path.join(projectRoot, filePath);
   try {
     const jsonData = fs.readFileSync(absolutePath, 'utf8');
     return JSON.parse(jsonData);
@@ -13,9 +17,10 @@ export const readJSONFile = (filePath) => {
   }
 };
 
-// 写入JSON文件
+// Function to write JSON file using a path relative to the project root
 export const writeJSONFile = (filePath, data) => {
-  const absolutePath = path.resolve('D://AA//student-grade-system', filePath);
+  // Construct the absolute path by joining the project root and the relative path
+  const absolutePath = path.join(projectRoot, filePath);
   try {
     const jsonString = JSON.stringify(data, null, 2);
     fs.writeFileSync(absolutePath, jsonString);

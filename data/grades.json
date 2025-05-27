@@ -10,8 +10,6 @@
       "createdAt": "2025-04-15T07:21:45.413Z",
       "updatedAt": "2025-04-15T07:21:45.413Z"
     },
-    
-    // 为 Seriphine 添加成绩
     {
       "id": "grade-seriphine-001",
       "courseId": "course-001",
@@ -102,8 +100,6 @@
       "createdAt": "2024-01-18T00:00:00.000Z",
       "updatedAt": "2024-01-18T00:00:00.000Z"
     },
-    
-    // 为 Chen Xu 添加成绩
     {
       "id": "grade-chenxu-001",
       "courseId": "course-001",
@@ -204,8 +200,6 @@
       "createdAt": "2024-01-18T00:00:00.000Z",
       "updatedAt": "2024-01-18T00:00:00.000Z"
     },
-    
-    // 为 zhangsan 添加成绩
     {
       "id": "grade-zhangsan-001",
       "courseId": "course-001",
@@ -306,8 +300,6 @@
       "createdAt": "2024-01-18T00:00:00.000Z",
       "updatedAt": "2024-01-18T00:00:00.000Z"
     },
-    
-    // 为 aaa 添加成绩
     {
       "id": "grade-aaa-001",
       "courseId": "course-001",
@@ -408,8 +400,6 @@
       "createdAt": "2024-01-18T00:00:00.000Z",
       "updatedAt": "2024-01-18T00:00:00.000Z"
     },
-    
-    // 张三（student-001）的成绩
     {
       "id": "grade-001",
       "courseId": "course-001",
@@ -510,8 +500,6 @@
       "createdAt": "2025-04-15T09:08:45.413Z",
       "updatedAt": "2025-04-15T09:08:45.413Z"
     },
-    
-    // 李四（student-002）的成绩
     {
       "id": "grade-004",
       "courseId": "course-001",
@@ -612,8 +600,6 @@
       "createdAt": "2025-04-15T09:09:45.413Z",
       "updatedAt": "2025-04-15T09:09:45.413Z"
     },
-    
-    // 王五（student-003）的成绩
     {
       "id": "grade-006",
       "courseId": "course-001",
@@ -713,6 +699,86 @@
       "examId": "b4060a16-a200-40f6-a3d6-a99d107bb39f",
       "createdAt": "2025-04-15T09:10:45.413Z",
       "updatedAt": "2025-04-15T09:10:45.413Z"
+    },
+    {
+      "id": "grade-trend-test-001",
+      "courseId": "course-001",
+      "studentId": "student-003",
+      "score": "85",
+      "comment": "第一次测试成绩",
+      "examId": "exam-001",
+      "createdAt": "2024-02-01T00:00:00.000Z",
+      "updatedAt": "2024-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "grade-trend-test-002",
+      "courseId": "course-001",
+      "studentId": "student-003",
+      "score": "82",
+      "comment": "第二次测试成绩，有所下降",
+      "examId": "exam-002",
+      "createdAt": "2024-02-15T00:00:00.000Z",
+      "updatedAt": "2024-02-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-trend-test-003",
+      "courseId": "course-001",
+      "studentId": "student-003",
+      "score": "78",
+      "comment": "第三次测试成绩，继续下降",
+      "examId": "exam-001",
+      "createdAt": "2024-03-01T00:00:00.000Z",
+      "updatedAt": "2024-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "grade-trend-test-004",
+      "courseId": "course-001",
+      "studentId": "student-003",
+      "score": "75",
+      "comment": "第四次测试成绩，连续下滑预警",
+      "examId": "exam-002",
+      "createdAt": "2024-03-15T00:00:00.000Z",
+      "updatedAt": "2024-03-15T00:00:00.000Z"
+    },
+    {
+      "id": "grade-trend-test-005",
+      "courseId": "course-002",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "80",
+      "comment": "数学第一次测试",
+      "examId": "exam-003",
+      "createdAt": "2024-02-05T00:00:00.000Z",
+      "updatedAt": "2024-02-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-trend-test-006",
+      "courseId": "course-002",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "77",
+      "comment": "数学第二次测试，下降",
+      "examId": "exam-004",
+      "createdAt": "2024-02-20T00:00:00.000Z",
+      "updatedAt": "2024-02-20T00:00:00.000Z"
+    },
+    {
+      "id": "grade-trend-test-007",
+      "courseId": "course-002",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "73",
+      "comment": "数学第三次测试，继续下降",
+      "examId": "exam-003",
+      "createdAt": "2024-03-05T00:00:00.000Z",
+      "updatedAt": "2024-03-05T00:00:00.000Z"
+    },
+    {
+      "id": "grade-trend-test-008",
+      "courseId": "course-002",
+      "studentId": "756b00df-1dde-4472-b0c0-2b55e0c2f572",
+      "score": "70",
+      "comment": "数学第四次测试，严重预警",
+      "examId": "exam-004",
+      "createdAt": "2024-03-20T00:00:00.000Z",
+      "updatedAt": "2024-03-20T00:00:00.000Z"
     }
   ]
 }
